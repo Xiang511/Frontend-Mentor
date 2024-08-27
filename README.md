@@ -6,3 +6,6 @@
 
 ### social-links-profile
 ![alt text](social-links-profile/design/destkop-design.jpg)
+
+### blog-preview-card
+![alt text](blog-preview-card/design/desktop-design.jpg)
