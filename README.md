@@ -11,4 +11,4 @@
 ![alt text](blog-preview-card/design/desktop-design.jpg)
 
 ### article-preview-component
-![alt text](article-preview-component/article-preview-component-master/design/desktop-design.jpg)
+![alt text](article-preview-component/design/desktop-design.jpg)
