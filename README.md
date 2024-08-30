@@ -1,5 +1,13 @@
-# Frontend-Mentor
-## Frontend Mentor  Solution
+# Frontend Mentor  Solution
+
+This repo is used to store all my solutions in Frontend Mentor
+
+
+## Usage
+
+```
+https://github.com/Xiang511/Frontend-Mentor/{The folder you want to see}/index.html
+```
 
 ### product-preview-card
 ![alt text](product-preview-card/design/desktop-design.jpg)
