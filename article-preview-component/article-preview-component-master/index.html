@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="style.css">
+  <title>Frontend Mentor | Article preview component</title>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap');
+  </style>
+
+</head>
+
+<body>
+
+  <div class="container">
+    <div class="pic">
+      <div class="img">
+        <img src="images/drawers.jpg" alt="">
+      </div>
+    </div>
+    <div class="main">
+
+      <h1>
+        Shift the overall look and feel by adding these wonderful
+        touches to furniture in your home
+      </h1>
+      <p>
+        Ever been in a room and felt like something was missing? Perhaps
+        it felt slightly bare and uninviting. I’ve got some simple tips
+        to help you make any room feel complete.
+      </p>
+      <div class="author">
+        <div class="item">
+          <div class="pic">
+            <img src="images/avatar-michelle.jpg" alt="">
+          </div>
+          <div class="txt">
+            <p>Michelle Appleton</p>
+            <span>28 Jun 2020</span>
+          </div>
+          <div class="pic share">
+            <img src="images/icon-share.svg" alt="">
+          </div>
+        </div>
+        <div class="icons">
+
+          <div class="icon">
+            <div class="txt">SHARE</div>
+            <img src="images/icon-facebook.svg" alt="">
+            <img src="images/icon-pinterest.svg" alt="">
+            <img src="images/icon-twitter.svg" alt="">
+          </div>
+          <div class="btn"><img src="images/icon-share.svg" alt=""></div>
+        </div>
+      </div>
+      <script>
+        let author = document.querySelector(".item");
+        let icons = document.querySelector(".icons");
+        let share = document.querySelector(".share");
+      
+
+        if (window.innerWidth < 992) {
+          icons.style.display = "none";
+          author.addEventListener("click", toggleAuthorIcons);
+          icons.addEventListener("click", toggleAuthorIcons);
+          console.log("mobile");
+          
+        }
+        if (window.innerWidth > 993) {
+          author.addEventListener("click", toggleAuthorIcons_desktop);
+          icons.style.display = "none";
+          console.log("desktop");
+          
+        }
+
+        function toggleAuthorIcons() {
+          if (icons.style.display == "none") {
+            icons.style.display = "flex";
+            author.style.display = "none";
+          } else {
+            icons.style.display = "none";
+            author.style.display = "flex";
+          }
+        }
+        function toggleAuthorIcons_desktop() {
+
+          if (icons.style.display == "none") {
+            icons.style.display = "flex";
+          } else {
+            icons.style.display = "none";
+          }
+
+        }
+      </script>
+
+    </div>
+  </div>
+
+
+</body>
+
+</html>

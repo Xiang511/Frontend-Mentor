@@ -1,0 +1,255 @@
+.attribution {
+    font-size: 11px;
+    text-align: center;
+}
+
+.attribution a {
+    color: hsl(228, 45%, 44%);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Manrope';
+}
+
+body {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: hsl(210, 46%, 95%);
+}
+
+img {
+    width: 100%;
+    vertical-align: middle;
+}
+
+.container {
+    padding: 20px;
+    /* height: 500px; */
+
+
+}
+
+.main {
+    background-color: #fff;
+    margin-top: -10px;
+
+}
+
+.container img {
+    width: 100%;
+    border-top-left-radius: 5%;
+    border-top-right-radius: 5%;
+
+}
+
+.main h1 {
+    font-weight: 700;
+    font-size: 18px;
+    color: hsl(217, 19%, 35%);
+    padding: 1em 1.5em 0 1.4em;
+}
+
+.main>p {
+    font-weight: 500;
+    font-size: 14px;
+    color: hsl(212, 23%, 69%);
+    padding: 1em 2.2em 1.5em 2em;
+    text-align: left;
+    line-height: 1.5em;
+
+}
+
+
+
+.author {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #fff;
+    width: 100%;
+    margin: auto;
+    padding-bottom: 1em;
+    padding-right: 2em;
+    padding-left: 2em;
+}
+
+.author .item {
+    display: flex;
+    justify-content: flex-start;
+}
+
+.author .item .pic {
+    width: 25%;
+    margin-left: auto;
+}
+
+.author .item .txt {
+    width: 70%;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: space-between;
+}
+
+.author img {
+    width: 70%;
+    border-radius: 50%;
+}
+
+.author .txt p {
+    color: hsl(217, 19%, 35%);
+    font-weight: 700;
+    display: inline-block;
+}
+
+.author .txt span {
+    color: hsl(214, 17%, 51%);
+    font-size: 16px;
+    font-weight: 500;
+}
+
+.share {
+    text-align: right;
+}
+
+.share img {
+    width: 60%;
+    background: hsl(210, 46%, 95%);
+    border-radius: 50%;
+    padding: 10px;
+
+}
+
+
+
+
+.icons {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: hsl(217, 19%, 35%);
+    width: 100%;
+    margin: auto;
+    padding-top: 1em;
+    padding-bottom: 1em;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    display: none;
+}
+
+.icons .txt {
+    color: hsl(212, 23%, 69%);
+}
+
+.icon {
+    display: flex;
+    gap: 20px;
+}
+
+.icon img {
+    width: 50%;
+}
+
+.btn {
+    position: relative;
+}
+
+.btn img {
+    width: 100%;
+    color: #fff;
+}
+
+@media screen and (min-width:992px) {
+    .container {
+        display: flex;
+        /* width: 40%; */
+        max-width: 900px;
+        margin: auto;
+    }
+
+    .container .pic {
+        width: 50%;
+    }
+
+    .container img {
+        border-top-left-radius: 5%;
+        border-bottom-left-radius: 5%;
+        border-top-right-radius: 0;
+    }
+
+    .main {
+        margin-top: 0;
+        width: 53%;
+    }
+
+    .main h1 {
+        font-size: 22px;
+        padding: 2em 1.5em 0 2em;
+    }
+
+    .main>p {
+        font-size: 14px;
+        padding: 1em 2.2em 1.5em 3em;
+    }
+
+    .author {
+        padding-right: 0em;
+        padding-left: 0em;
+        justify-content: space-between;
+        margin: auto;
+        position: relative;
+    }
+
+    .author .item {
+        margin-left: 3em;
+    }
+
+    .author img {
+        border-radius: 50%;
+
+    }
+
+    .author .item .txt {
+        justify-content: space-around;
+    }
+
+    .icons {
+        position: absolute;
+        top: -100%;
+        left: 55%;
+        width: 62%;
+        display: none;
+        
+    }
+
+    .btn {
+        display: none;
+    }
+
+    
+    .icon::after {
+        content: "";
+        position: absolute;
+        top: 100%;
+        left: 50%;
+        width: 0;
+        height: 0;
+        border-top: 10px solid hsl(217, 19%, 35%);
+        border-right: 10px solid transparent;   
+        border-left: 10px solid transparent;
+        z-index: 1;
+        background-color: #FFF;
+    }
+    .icons{
+        border-top-left-radius: 10px;
+        border-top-right-radius: 10px;
+        border-bottom-left-radius: 10px;
+        border-bottom-right-radius: 10px;
+    }
+
+}
