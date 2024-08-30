@@ -9,3 +9,6 @@
 
 ### blog-preview-card
 ![alt text](blog-preview-card/design/desktop-design.jpg)
+
+### article-preview-component
+![alt text](article-preview-component/article-preview-component-master/design/desktop-design.jpg)
